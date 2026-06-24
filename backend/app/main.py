@@ -10,7 +10,6 @@ from app.core.database import Base, engine
 from app.core.logging_config import configure_logging
 
 settings = get_settings()
-print("DATABASE_URL =", settings.database_url)
 configure_logging(settings.log_level)
 logger = logging.getLogger(__name__)
 
